@@ -35,7 +35,7 @@ cohortDefinitionSet <- readRDS(file.path("/Users/jreps/Documents/GitHub/Tetraple
 populationSettings <- PatientLevelPrediction::createStudyPopulationSettings(
   firstExposureOnly = T, 
   removeSubjectsWithPriorOutcome = T, 
-  riskWindowEnd = 30*6, 
+  riskWindowEnd = 30*6, # 6 month
   requireTimeAtRisk = F
 )
 
